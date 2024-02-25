@@ -1,0 +1,16 @@
+[package]
+name = "sgdb"
+version = "1.0.0"
+edition = "2021"
+description = "Database and CLI to interact with part of it"
+license-file = "LICENSE"
+repository = "https://github.com/wmuth/SoundGoodDB"
+keywords = ["SQL", "CLI", "SQLX", "Postgres"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+dotenvy = "0.15.7"
+futures = "0.3.29"
+sqlx = { version = "0.7", features = [ "runtime-tokio", "postgres", "bigdecimal", "time" ] }
+tokio = { version = "1.34.0", features = ["full"] }
+
